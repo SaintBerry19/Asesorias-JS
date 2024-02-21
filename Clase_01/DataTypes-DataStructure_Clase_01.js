@@ -18,6 +18,18 @@ let cadena = "Hola me llamo Roberto";
 for (let i = 0; i < cadena.length; i++) {
   console.log(cadena[i]);
 }
+// JS:
+// for (let i = 0; i < 10; i += 2) {
+//   console.log(i)
+// }
+// for (let elemento of cadena){
+//   console.log(elemento)
+// }
+// Python:
+// for i in range(0,10,2):
+//   console.log(i)
+// for elemento in cadena:
+//  console.log(elemento)
 
 // Las arrays, estructura iterable y mutable.
 // Digamos que queremos hacer una copia de la lista y modificarla y ademas conservar la original no se debe de realizar esto por la forma en que funciona
@@ -42,7 +54,8 @@ console.log("Forma Efectiva");
 lista = [1, 2, 3, 4, 5];
 lista_2 = [];
 for (let i = 0; i < lista.length; i++) {
-  lista_2[i] = 4;
+  // lista_2[i] = 4;
+  lista_2.push(4); // esto es el append de python
 }
 
 for (let i of lista) {
@@ -121,3 +134,22 @@ const numeros = new Numeros();
 const resultado = numeros.sumar(1, 2);
 console.log("resultado utilizando metodos");
 console.log(resultado); // Debería mostrar 8 en la consola
+
+// para los condicionales la sintaxis es la siguiente
+
+// if(condicion){
+
+// }
+// else if(condicion){}
+// else{}
+
+// los operadores son:
+// === - strict
+// !== - strict
+// == - no strict xd
+// !=
+// <=
+// >=
+
+console.log(1=='1')
+console.log(1==='1')
